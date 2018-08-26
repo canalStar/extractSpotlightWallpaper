@@ -5,11 +5,11 @@
 # Created Date: 2018-08-25 16:20:42
 # Author: canalStar
 # -----
-# Last Modified: 2018-08-26 13:28:25
+# Last Modified: 2018-08-26 14:53:06
 # Last Modified By: canalStar
 ###
 
-""" 将windows10 锁屏spotlight壁纸提取出来，并将竖屏与横屏文件夹，分开存放
+""" 将windows10 锁屏spotlight壁纸提取出来，并将竖屏与横屏文件夹，分开存放以便用作桌面壁纸
     1.读取当前目录中的记录文件，如果没有则新建一个
     2.将spotlight文件夹中记录文件夹中不存在的且大于300k的文件提取到临时文件夹中，并重命名为.jpg格式
     3.读取文件分辨率，将分辨率为1920*1080与1080*1920的图片分别移动到不同的文件夹中，并将所移动的文件名
@@ -17,7 +17,6 @@
     4.删除临时文件夹
 """
 import os
-import csv
 import shutil
 from PIL import Image
 
